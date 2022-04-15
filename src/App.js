@@ -6,10 +6,12 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Lunch from './Components/Home/Lunch';
+import Login from './Components/Login/Login';
+import SignUp from './Components/SignUp/SignUp';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Header></Header>
       <Bannar></Bannar>
       <Routes>
@@ -18,6 +20,8 @@ function App() {
       <Home></Home>
       <AboutUs></AboutUs>
       <Footer></Footer>
+      <Login></Login>
+      <SignUp></SignUp>
     </div>
   );
 }
