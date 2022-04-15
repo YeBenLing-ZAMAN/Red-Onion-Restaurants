@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import Lunch from './Lunch';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
                     </Nav>
                 </Container>
             </Navbar>
+            <Lunch></Lunch>
         </div>
     );
 };

@@ -1,0 +1,9 @@
+.about-container{
+    height: 100vh;
+}
+.content-container{
+    width: 40vw;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: left;
+}
