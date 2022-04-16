@@ -11,24 +11,25 @@ import SignUp from './Components/SignUp/SignUp';
 import Breakfast from './Components/Home/Breakfast';
 import Lunch from './Components/Home/Lunch';
 import Dinner from './Components/Home/Dinner';
+import Menu from './Components/Menu/Menu';
 function App() {
   return (
     <div className="">
       <Header></Header>
       <Bannar></Bannar>
       <Routes>
-        <Route path='/home' element={<Home></Home>}>
+        {/* <Route to='/' path={}></Route> */}
+        <Route path='/menu' element={<Menu></Menu>}>
           <Route path='breakfast' element={<Breakfast></Breakfast>}></Route>
           <Route path='lunch' element={<Lunch></Lunch>}></Route>
           <Route path='dinner' element={<Dinner></Dinner>}></Route>
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/about' element={  <AboutUs></AboutUs>}></Route>
       </Routes>
-      <AboutUs></AboutUs>
       <Footer></Footer>
-      <CheckOut></CheckOut>
-      <Breakfast></Breakfast>
+      {/* <CheckOut></CheckOut> */}
     </div>
   );
 }

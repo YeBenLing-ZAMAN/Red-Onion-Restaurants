@@ -3,11 +3,10 @@ import { useEffect, useState } from 'react';
 const useFood = () => {
     const [foods, setFoods] = useState([]);
     useEffect( () => {
-        fetch('food.json')
+        fetch('https://raw.githubusercontent.com/YeBenLing-ZAMAN/fakedata/main/food.json')
             .then(res => res.json())
             .then(data => setFoods(data));
     }, [])
-    console.log(foods)
     return [foods];
 };
 

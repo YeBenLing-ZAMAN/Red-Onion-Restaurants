@@ -4,8 +4,8 @@ import { Outlet } from 'react-router-dom';
 import CustomLink from '../Header/CustomLink';
 const Home = () => {
     return (
-        <div>
-            <Navbar id="home" bg="light" variant="light">
+        <div className='mb-5' style={{minHeight:"100vh"}}>
+            <Navbar id="home2" bg="light" variant="light">
                 <Container>
                     <Nav className="mx-auto">
                         <CustomLink className='pe-2 text-decoration-none' to="breakfast">Breakfast</CustomLink>

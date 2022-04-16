@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 
 const FoodShowing = ({ item }) => {
-    console.log(item);
     const { picture, name, about, balance } = item;
     return (
         <Col className='d-flex'>
