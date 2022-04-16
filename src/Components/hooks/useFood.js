@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 
 const useFood = () => {
     const [foods, setFoods] = useState([]);
-    useEffect(() => {
+    useEffect( () => {
         fetch('food.json')
             .then(res => res.json())
-            .then(data => setFoods(data));
+            .then(data => console.log(data));
     }, [])
-    return [foods, setFoods];
+    return [foods];
 };
 
 export default useFood;

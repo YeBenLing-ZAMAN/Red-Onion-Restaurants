@@ -11,19 +11,19 @@ const CheckOut = () => {
                         <Form className='mx-auto w-75'>
                             <h3>Edit Delivery Details</h3>
                             <hr className='mb-5' />
-                            <Form.Group className="mb-3" controlId="formBasicText">
+                            <Form.Group className="mb-3" controlId="formBasicServices">
                                 <Form.Control type="text" placeholder="Services" />
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicText">
+                            <Form.Group className="mb-3" controlId="formBasicRoad">
                                 <Form.Control type="text" placeholder="Road No" />
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicText">
+                            <Form.Group className="mb-3" controlId="formBasicBuilding">
                                 <Form.Control type="text" placeholder="Flat, Suite or floor" />
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicText">
+                            <Form.Group className="mb-3" controlId="formBasicDevlivery">
                                 <Form.Control type="text" placeholder="Devlivery to" />
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicText">
+                            <Form.Group className="mb-3" controlId="formBasicMobile">
                                 <Form.Control type="tel" placeholder="Mobile Number" />
                             </Form.Group>
                             <Button className='w-100' variant="danger" type="submit">

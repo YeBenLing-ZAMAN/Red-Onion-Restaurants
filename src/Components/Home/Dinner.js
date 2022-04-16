@@ -4,7 +4,7 @@ const Dinner = () => {
     
     return (
         <div>
-            
+            this is dinner
         </div>
     );
 };

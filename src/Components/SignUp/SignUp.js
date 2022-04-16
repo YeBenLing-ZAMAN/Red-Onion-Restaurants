@@ -8,7 +8,7 @@ const SignUp = () => {
         <div className='w-50'>
             <img className='d-block mx-auto my-5' src={logo} alt="" />
             <Form className='mx-auto w-75'>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="email" placeholder="Enter Your Name" />
                 </Form.Group>
@@ -20,7 +20,7 @@ const SignUp = () => {
                     <Form.Label>New Password</Form.Label>
                     <Form.Control type="password" placeholder="Enter New Password" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" controlId="formBasicPasswordConfirm">
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control type="password" placeholder="Confirm Password" />
                 </Form.Group>

@@ -1,20 +1,22 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import Lunch from './Lunch';
-
+import { Outlet } from 'react-router-dom';
+import CustomLink from '../Header/CustomLink';
 const Home = () => {
     return (
         <div>
-            <Navbar bg="light" variant="light">
+            <Navbar id="home" bg="light" variant="light">
                 <Container>
                     <Nav className="mx-auto">
-                        <Nav.Link href="#Breakfast">Breakfast</Nav.Link>
-                        <Nav.Link href="#Lunch">Lunch</Nav.Link>
-                        <Nav.Link href="#Dinner">Dinner</Nav.Link>
+                        <CustomLink className='pe-2 text-decoration-none' to="breakfast">Breakfast</CustomLink>
+                        <CustomLink className='pe-2 text-decoration-none' to="lunch">Lunch</CustomLink>
+                        <CustomLink className='pe-2 text-decoration-none' to="dinner">Dinner</CustomLink>
                     </Nav>
                 </Container>
             </Navbar>
-            <Lunch></Lunch>
+            <div>
+                <Outlet></Outlet>
+            </div>
         </div>
     );
 };
