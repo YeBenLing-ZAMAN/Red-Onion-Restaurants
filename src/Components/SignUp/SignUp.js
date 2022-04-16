@@ -5,7 +5,7 @@ import logo from '../../Images/logo/logo2.png';
 const SignUp = () => {
     return (
         <div className='form-container d-flex align-items-center justify-content-center'>
-        <div className='w-50'>
+        <div className='w-50 from-red-onion'>
             <img className='d-block mx-auto my-5' src={logo} alt="" />
             <Form className='mx-auto w-75'>
                 <Form.Group className="mb-3" controlId="formBasicName">

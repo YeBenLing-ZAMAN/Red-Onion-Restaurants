@@ -5,8 +5,9 @@ const useFood = () => {
     useEffect( () => {
         fetch('food.json')
             .then(res => res.json())
-            .then(data => console.log(data));
+            .then(data => setFoods(data));
     }, [])
+    console.log(foods)
     return [foods];
 };
 
