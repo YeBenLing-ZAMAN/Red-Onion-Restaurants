@@ -5,10 +5,7 @@ import FoodShowing from './FoodShowing';
 
 const Breakfast = () => {
     const [foods] =useFood();
-   /*  console.log(foods.length);
-    console.log(foods); */
     const breakfast = foods.filter(food => food.Type === 'Breakfast');
-    /* console.log(breakfast);*/
     return (
         <Row xs={1} md={3} className="container mx-auto g-4 pt-5">
             {
